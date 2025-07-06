@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it stretches across the screen */
+  display: flex;
+  justify-content: center; /* Centers inner content */
+  background-color: white;
+  z-index: 999; /* Keep it above content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: slight shadow */
+}
+
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.navigation_option ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 0.6rem;
+  gap: 3rem;
+}
+.nav_links a {
+  text-decoration: none;
+  color: #00000099;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* Nav Animations*/
+.nav_links a:hover {
+  text-decoration: underline;
+  text-decoration-color: #336ca5;
+  color: #336ca5;
+  text-decoration-thickness: 0.2rem;
+}
+
+.nav_links a.active {
+  text-decoration: underline;
+  text-decoration-color: #336ca5;
+  color: #336ca5;
+  text-decoration-thickness: 0.2rem;
+}
+
+/* logo styles */
+#logo {
+  background-image: url("./img/Blue_Archive_EN_logo.svg");
+  display: flex;
+  background-size: contain;
+  background-size: auto;
+  width: 6rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+}
+
+#git {
+  background-image: url("./img/github-icon-1-logo-svgrepo-com.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#git_txt {
+  filter: opacity(0%);
+}
+
+/* animation */
+#logo_txt {
+  filter: opacity(0%);
+  height: 1rem;
+}
+
+#logo:hover {
+  filter: brightness(70%);
+}
+
+#git:hover {
+  filter: invert(60%);
+}
+
+/*Content*/
+* {
+  font-family: "Noto Sans Display", sans-serif;
+  color: #0a3e6e;
+}
+
+.parallelogram {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-top: 7rem;
+  background-color: #416080;
+  justify-content: center;
+  border-radius: 3px;
+  transform: skew(-15deg);
+  gap: 0.5rem;
+}
+
+.parallelogram img {
+  width: 2rem;
+  filter: brightness(100);
+  transform: skew(15deg);
+}
+
+#tarp {
+  font-weight: 800;
+  color: white;
+  transform: skew(15deg);
+}
+
+.center_tarp {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  margin-top: -10px;
+}
+
+.header p {
+  font-size: small;
+}
+/* adapdability */
+
+/* @media (max-width: 1110px) {
+  #nav {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+  .nav_bar {
+    flex-direction: column;
+    width: fit-content;
+    align-items: space-around;
+  }
+
+  .navigation_option ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+} */
